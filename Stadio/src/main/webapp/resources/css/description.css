@@ -1,0 +1,215 @@
+@charset "ISO-8859-1";
+*{
+  font-family: sans-serif;
+}
+
+body{
+  background-image: url("resources/img/background.png") ;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.all{
+    display: flex;
+    margin: auto;
+    width: 430px;
+    box-shadow: 0 4px 40px 0 rgb(0 0 0);
+  padding: 50px;
+  backdrop-filter: blur(164px);
+  border: 1px solid rgb(4, 1, 23);
+}
+.info{
+    margin-left: 20px;
+}
+.info h1,p{
+    color: white;
+}
+.mapp-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.info-colons h1,p{
+    color: white;
+    width: 200px;
+    height: 50px;
+}
+.info-colons{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 10px;
+}
+.img-cart{
+    margin-left: 10px;
+}
+.colon{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-top: 1px solid rgb(255, 255, 255);
+}
+.colon p{
+    display: flex;
+    align-items: center;
+}
+.colon h1{
+  display: flex;
+  align-items: center;
+}
+.colon input{
+    width: 60px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+.filter-btn {
+    width: 20%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 0.5s;
+    background-color: white;
+    color: black;
+  }
+  
+  .filter-btn:hover {
+    color: #ffffff;
+    background-color: black;
+  }
+  input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.input-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 20px;
+}
+  ::-webkit-scrollbar {
+    display: none;
+  }
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input[type="submit"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    color: black;
+    height: 2.5rem;
+    width: 6rem;
+    box-shadow: 3px 3px 10px 3px #000;
+    cursor: pointer;
+    transition: all 0.5s;
+    background-color: #ffffff;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+
+input[type="submit"]:hover {
+    color: #ffffff;
+    background-color: black;
+}
+
+input{
+    height: 2rem;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 2px 2px 5px 2px #000;
+    color: black;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    background-color: rgba(13, 6, 50, 0.8);
+    color: white;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(10px); 
+  }
+  .container.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .container h1 {
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  
+  .container button {
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .container button:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  body.active-container {
+    overflow: hidden;
+  }
+  
+  body.active-container .full-page {
+    filter: blur(12px);
+    transition: filter 300ms ease-in-out;
+  }
+  .close-btn{
+    margin-left: 450px;
+  }
+  .container .img-of-pay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .container .img-of-pay img {
+    width: 70px;
+  }
+
+.fa-solid{
+  cursor: pointer;
+}
+
+input{
+  text-align: center;
+  
+}

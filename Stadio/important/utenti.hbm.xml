@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+ <hibernate-mapping>  
+  <class name="com.project.bean.Utente" table="utenti">  
+    <id name="id_utente">  
+     	<generator class="increment"></generator>  
+    </id>  
+            
+    <property name="nome" column="nome"></property>  
+    <property name="cognome" column="cognome"></property>  
+    <property name="codice_fiscale" column="codice_fiscale"></property>  
+    <property name="email" column="email"></property> 
+    <property name="password" column="password"></property>   
+     
+            
+  </class>  
+            
+ </hibernate-mapping> 
+

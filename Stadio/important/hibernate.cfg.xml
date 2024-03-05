@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC  
+  "-//Hibernate/Hibernate Configuration DTD //EN"  
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">  
+  
+<hibernate-configuration>  
+  
+    <session-factory>  
+          
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property> 
+        <property name="connection.url">jdbc:mysql://localhost:3307/backend_project</property>  
+        <property name="connection.username">root</property>  
+        <property name="connection.password">milano2023</property>  
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>  
+        <property name="show_sql">true</property>
+         
+        <mapping resource="utenti.hbm.xml"/>  
+        <mapping resource="settori.hbm.xml"/>  
+        <mapping resource="sottosettori.hbm.xml"/>  
+        <mapping resource="settori_e_sottosettori.hbm.xml"/>  
+        <mapping resource="posti_evento.hbm.xml"/>  
+        <mapping resource="eventi.hbm.xml"/>  
+        <mapping resource="categorie_tariffa.hbm.xml"/>  
+        <mapping resource="categorie_eventi.hbm.xml"/>  
+        <mapping resource="biglietti.hbm.xml"/>  
+        <mapping resource="amministratori.hbm.xml"/>  
+    </session-factory>  
+  
+</hibernate-configuration> 

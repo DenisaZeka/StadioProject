@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+ <hibernate-mapping>  
+  <class name="com.project.bean.Posti_evento" table="posti_evento">  
+    <id name="id_posto_evento">  
+       <generator class="increment"></generator>  
+    </id>  
+   <!-- <property name="FK_id_settore_e_sottosettore" column="FK_id_settore_e_sottosettore"></property>  -->
+    <!-- <property name="FK_id_evento" column="FK_id_evento"></property>  -->
+    <property name="numero_posti_disponibili_per_sottosettore" column="numero_posti_disponibili_per_sottosettore"></property>  
+      
+      <many-to-one name="evento" lazy="false" fetch="join" column = "FK_id_evento"/>
+      <many-to-one name="settore_e_sottosettore" lazy="false" fetch="join" column = "FK_id_settore_e_sottosettore"/>
+  </class> 
+            
+ </hibernate-mapping> 
+

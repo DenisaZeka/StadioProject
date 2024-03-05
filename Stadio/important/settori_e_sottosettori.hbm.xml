@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+ <hibernate-mapping>  
+  <class name="com.project.bean.Settori_e_sottosettori" table="settori_e_sottosettori">  
+    <id name="id_settore_e_sottosettore">  
+     	<generator class="increment"></generator>  
+    </id>  
+            
+   <!-- <property name="FK_id_settore" column="FK_id_settore"></property>  
+      <property name="FK_id_sottosettore" column="FK_id_sottosettore"></property>   --> 
+        <property name="numero_posti_massimo" column="numero_posti_massimo"></property>  
+
+ 	<many-to-one name="settore" lazy="false" fetch="join" column = "FK_id_settore"/>
+      <many-to-one name="sottosettore" lazy="false" fetch="join" column = "FK_id_sottosettore"/>
+  </class>  
+            
+ </hibernate-mapping> 
+

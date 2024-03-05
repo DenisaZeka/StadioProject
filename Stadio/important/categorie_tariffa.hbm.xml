@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+ <hibernate-mapping>  
+  <class name="com.project.bean.Categorie_tariffa" table="categorie_tariffa">  
+    <id name="id_categoria_tariffa">  
+     	<generator class="increment"></generator>  
+    </id>  
+            
+    <property name="categoria_tariffa" column="categoria_tariffa"></property>  
+    <property name="moltiplicatore_tariffa" column="moltiplicatore_tariffa"></property>         
+  </class>  
+            
+ </hibernate-mapping> 
+

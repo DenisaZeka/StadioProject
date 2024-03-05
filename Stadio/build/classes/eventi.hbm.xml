@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+ <hibernate-mapping>  
+  <class name="com.project.bean.Eventi" table="eventi">  
+    <id name="id_evento">  
+     	<generator class="increment"></generator>  
+    </id>  
+            
+    <property name="nome_evento" column="nome_evento"></property>  
+    <property name="data_ora_evento" column="data_ora_evento"></property>  
+    <property name="prezzo_base_evento" column="prezzo_base_evento"></property>  
+    <!-- property name="FK_id_categoria_evento" column="FK_id_categoria_evento"></property--> 
+    <property name="immagine_evento" column="immagine_evento"></property>   
+     
+     <many-to-one name="categoria" lazy="false" fetch="join" column = "FK_id_categoria_evento"/>
+     
+            
+  </class>  
+            
+ </hibernate-mapping> 
+

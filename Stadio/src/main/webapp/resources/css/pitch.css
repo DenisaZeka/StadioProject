@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  cursor: default;
+  /* outline: 1px solid orange; */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*background-image: url("resources/img/background.png");*/
+}
+
+.pitch-container {
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.stage-container {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stage {
+  width: 50%;
+  height: 100%;
+  background-color: black;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 4rem;
+}
+
+.sectors-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.sectors {
+    background-color: #fafafa;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    min-width: 200px;
+    height: 400px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subsectors-container {
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.subsector {
+  width: 42%;
+  height: 100px;
+   background-color: rgb(11, 8, 43);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  opacity: 0.4;
+}
+
+.clickable {
+  cursor: pointer;
+  opacity: 1;
+}
+
+div#lateral-center {
+  width: 100%;
+}
+
+div#center {
+  width: 450px;
+}
+
+#center .subsectors-container#top {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#center .subsectors-container#top .subsector#normal {
+  width: 100px;
+  height: 100px;
+  justify-self: center;
+  align-self: center;
+}
+
+#center .subsectors-container#down {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+#center .subsectors-container#down .subsector {
+  width: 170px;
+  height: 100px;
+  justify-self: center;
+  align-self: center;
+}
+
+.side-tickets-container {
+  width: 20%;
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+span.title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  height: 50px;
+}
+
+.tickets-container {
+  width: 80%;
+  height: 70%;
+  display: flex;
+  overflow: auto;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  gap: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.ticket {
+  width: 70%;
+  min-height: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ticket-description-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-direction: column; */
+  gap: 10px;
+}
+
+.subtitle {
+  width: fit-content;
+  font-size: 1.1rem;
+}
+
+.btn-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+span#price {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.priceDiv {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+  color: white;
+  background-color: black;
+}
+
+.btn.small {
+  width: 20px;
+  height: 20px;
+}
+
+.btn.big {
+  width: 80%;
+  height: 50px;
+}
+
+.sector-name {
+  position: absolute;
+  bottom: 30px;
+  font-size: 1.35rem;
+}
+
+div#center-center {
+  width: 45%;
+}
+
+.removeTicket {
+  width: 25px;
+  height: 25px;
+}
+
+.removeTicket img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}

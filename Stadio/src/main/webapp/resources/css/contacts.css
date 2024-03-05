@@ -1,0 +1,171 @@
+@charset "ISO-8859-1";
+ body{
+    background-image: url("resources/img/background.png");
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    /* outline: solid orange 1.5px; */
+  }
+  
+  .main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 85vh;
+    width: 100%;
+  }
+  
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    gap: 50px;
+    padding: 50px;
+  }
+  
+  .text-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    height: auto;
+    width: 40%;
+    gap: 70px;
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 40%;
+    min-width: 500px;
+    margin-right: 50px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    width: 100%;
+    min-height: 300px;
+    gap: 30px;
+    padding: 50px;
+    box-shadow: 0 4px 40px 0 rgb(0 0 0);
+    backdrop-filter: blur(164px);
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    gap: 15px;
+  }
+  
+  input {
+    height: 50px;
+    border-radius: 5px;
+    border: solid rgb(0, 0, 0, 0.5) 1.5px;
+    padding: 10px;
+    width: 100%;
+    box-shadow: none;
+  }
+  
+  input:hover {
+    box-shadow: none;
+  }
+  
+  textarea {
+    min-height: 70px;
+    max-height: 180px;
+    border-radius: 5px;
+    border: solid rgb(0, 0, 0, 0.5) 1.5px;
+    resize: vertical;
+    padding: 10px;
+    width: 100%px;
+  }
+  
+  .message-submit {
+    height: 50px;
+    border-radius: 5px;
+    border: solid rgb(0, 0, 0, 0.5) 1.5px;
+    width: 95%;
+    background-color: white;
+    transition: all 0.5s;
+  }
+  
+  .message-submit:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .title {
+    font-size: 3rem;
+  }
+  
+  .subtext {
+    font-size: 1.3rem;
+    max-width: 450px;
+  }
+  
+  img#img1 {
+    position: absolute;
+    width: 200px;
+    right: 20px;
+    top: 449px;
+    z-index: -1;
+    opacity: 0.7;
+  }
+  
+  img#img2 {
+    position: absolute;
+    width: 450px;
+    top: 145px;
+    right: 417px;
+    z-index: -1;
+    opacity: 0.2;
+  }
+  
+  @media (max-width: 1000px) {
+    .main-container {
+      flex-direction: column;
+    }
+  
+    .text-container {
+      width: 80%;
+    }
+  
+    .form-container {
+      width: 80%;
+      margin-right: 0;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .form-container {
+      min-width: 280px;
+    }
+  
+    .text-container {
+      width: 90%;
+      gap: 20px;
+    }
+  
+    .title {
+      font-size: 2.5rem;
+    }
+  
+    .subtext {
+      font-size: 0.9rem;
+    }
+  }

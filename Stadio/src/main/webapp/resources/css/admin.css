@@ -1,0 +1,384 @@
+@charset "ISO-8859-1";
+
+body{
+ background-image: url("resources/img/background.png");
+ 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  /* outline: 1px solid orange; */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.main-container {
+  display: flex;
+}
+
+.side-bar {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  gap: 95px;
+  border-right: 1px solid white;
+  justify-content: center;
+  color: white;
+}
+
+.side-bar-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+span.section-title {
+  width: fit-content;
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: default;
+}
+
+.section-subtitles-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section-subtitle {
+  width: fit-content;
+  cursor: pointer;
+}
+
+.content-container {
+  width: 85%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custum-file-upload {
+  height: 120px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  gap: 20px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 48px 35px -48px rgba(0, 0, 0, 0.1);
+}
+
+.custum-file-upload .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custum-file-upload .icon svg {
+  height: 80px;
+  fill: rgba(75, 85, 99, 1);
+}
+
+.custum-file-upload .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custum-file-upload .text span {
+  font-weight: 400;
+  color: rgba(75, 85, 99, 1);
+}
+
+.custum-file-upload input {
+  display: none;
+}
+
+.add-event-container {
+  width: 80%;
+  height: auto;
+  display: flex;
+  border: 1px solid rgb(255 255 255 / 30%);
+  padding: 30px;
+  color: white;
+}
+
+.add-event-section {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-section {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+label.input-title {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+input#event-date {
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.select {
+  width: 104.3%;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+input#event-price {
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.add-event-section#right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.seat-selector {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 80%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.add-event-btn {
+  width: 50%;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 1.3rem;
+  transition: all 0.5s;
+  background-color: white;
+}
+
+.add-event-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.add-admin-container {
+  width: 50%;
+  height: auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.input-section-2 {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.add-admin-btn {
+  width: 80%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 30px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.add-admin-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.image-selected-container {
+  width: 200px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-event-top-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  gap: 40px;
+}
+
+.image-selected {
+  width: auto;
+  max-width: 200px;
+  height: 100%;
+}
+
+#logout {
+  cursor: pointer;
+}
+
+.pwd-icon-container {
+  position: absolute;
+  right: 10px;
+  bottom: 16px;
+  width: 20px;
+  height: 20px;
+}
+
+.pwd-icon-container img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.overSection {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.eventForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+  color: white;
+}
+
+img.close-pitch {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.admin-login-container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: white;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-admin {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.login-admin form {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.login-admin-section {
+  width: 400px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.login-admin-section label.subtitle {
+  height: 50px;
+}
+
+.login-admin-section input {
+  width: 380px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.login-admin input.btn {
+  width: 80%;
+  height: 50px;
+  font-size: 1.3rem;
+}

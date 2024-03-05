@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+ <hibernate-mapping>  
+  <class name="com.project.bean.Categorie_eventi" table="categorie_eventi">  
+    <id name="id_categoria_evento">  
+     	<generator class="increment"></generator>  
+    </id>  
+            
+    <property name="nome_categoria" column="nome_categoria"></property>    
+  </class>  
+            
+ </hibernate-mapping> 
+

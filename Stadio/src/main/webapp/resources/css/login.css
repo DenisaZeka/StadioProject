@@ -1,0 +1,78 @@
+@charset "ISO-8859-1";
+ body{
+    background-image: url("resources/img/background.png");
+  }
+  input {
+  color: rgba(0, 0, 0, 0.527);
+}
+form input{
+  border: 1px solid black;
+}
+.second-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.log-in {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem;
+  gap: 3rem;
+  place-self: center;
+  width: 30rem;
+  margin: auto;
+  margin-top: 7rem;
+  box-shadow: 0 4px 40px 0 rgb(0 0 0);
+  padding: 50px;
+  backdrop-filter: blur(164px);
+  border: 1px solid rgb(4, 1, 23);
+}
+.log-out{
+	margin-top:20px;
+	background-color:white;
+	border:1px solid blue;
+	color:black;
+}
+.log-out li a {
+    color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  column-gap: 5rem;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+input {
+  height: 2rem;
+  width: 17rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+button {
+  background-color: white;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+button:hover{
+  background-color: rgb(16, 16, 29);
+  color: white;
+}
+
+.main-head {
+  display: flex;
+  flex-direction: column;
+}

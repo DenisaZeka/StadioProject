@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+ <hibernate-mapping>  
+  <class name="com.project.bean.Biglietti" table="biglietti">  
+    <id name="id_biglietto">  
+     	<generator class="increment"></generator>  
+    </id>  
+            
+   <!--  <property name="FK_id_utente" column="FK_id_utente"></property>  
+    <property name="FK_id_posto_evento" column="FK_id_posto_evento"></property> 
+    <property name="FK_id_categoria_tariffa" column="FK_id_categoria_tariffa"></property>  --> 
+    <property name="data_di_acquisto" column="data_di_acquisto"></property>  
+    <property name="prezzo_finale" column="prezzo_finale"></property>    
+     <property name="quantita_posti" column="quantita_posti"></property> 
+    
+    
+     <many-to-one name="categoria_tariffa" lazy="false" fetch="join" column = "FK_id_categoria_tariffa"/>
+      <many-to-one name="utente" lazy="false" fetch="join" column = "FK_id_utente"/>
+       <many-to-one name="posto_evento" lazy="false" fetch="join" column = "FK_id_posto_evento"/>
+     
+    </class>  
+            
+ </hibernate-mapping> 
+
